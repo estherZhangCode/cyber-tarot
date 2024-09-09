@@ -1,0 +1,11 @@
+framework module feature_guider {
+  umbrella header "feature_guider-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module feature_guider.Swift {
+  header "feature_guider-Swift.h"
+  requires objc
+}

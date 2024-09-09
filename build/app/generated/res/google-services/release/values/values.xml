@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">918312154067</string>
+    <string name="google_api_key" translatable="false">AIzaSyBieve-zgEQY55AIqa2Fj-4mHExC9UmJMQ</string>
+    <string name="google_app_id" translatable="false">1:918312154067:android:99ade4dacdda02fe9b3526</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBieve-zgEQY55AIqa2Fj-4mHExC9UmJMQ</string>
+    <string name="google_storage_bucket" translatable="false">cyber-tarot-3e333.appspot.com</string>
+    <string name="project_id" translatable="false">cyber-tarot-3e333</string>
+</resources>

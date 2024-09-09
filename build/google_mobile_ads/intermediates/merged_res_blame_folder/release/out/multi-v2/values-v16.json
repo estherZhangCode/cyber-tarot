@@ -1,0 +1,72 @@
+{
+    "logs": [
+        {
+            "outputFile": "io.flutter.plugins.googlemobileads.google_mobile_ads-merged_res-32:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/Users/esther/.gradle/caches/transforms-3/cd0a7c011193f49f39b4e36244406af7/transformed/core-1.8.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/esther/.gradle/caches/transforms-3/8768b35cd39141a78f65bfcce1aa48da/transformed/appcompat-1.2.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "io.flutter.plugins.googlemobileads.google_mobile_ads-mergeReleaseResources-30:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/Users/esther/.gradle/caches/transforms-3/cd0a7c011193f49f39b4e36244406af7/transformed/core-1.8.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/esther/.gradle/caches/transforms-3/8768b35cd39141a78f65bfcce1aa48da/transformed/appcompat-1.2.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}

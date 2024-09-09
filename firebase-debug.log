@@ -1,0 +1,193 @@
+[debug] [2024-08-21T15:25:09.266Z] ----------------------------------------------------------------------
+[debug] [2024-08-21T15:25:09.268Z] Command:       /usr/local/bin/firebase /Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase projects:list
+[debug] [2024-08-21T15:25:09.268Z] CLI Version:   13.15.3
+[debug] [2024-08-21T15:25:09.268Z] Platform:      darwin
+[debug] [2024-08-21T15:25:09.268Z] Node Version:  v18.5.0
+[debug] [2024-08-21T15:25:09.270Z] Time:          Wed Aug 21 2024 23:25:09 GMT+0800 (China Standard Time)
+[debug] [2024-08-21T15:25:09.270Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-21T15:25:09.275Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-21T15:25:14.325Z] Error: Timed out.
+    at Timeout._onTimeout (/Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/utils.js:268:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-21T15:25:21.102Z] ----------------------------------------------------------------------
+[debug] [2024-08-21T15:25:21.104Z] Command:       /usr/local/bin/firebase /Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase projects:list
+[debug] [2024-08-21T15:25:21.104Z] CLI Version:   13.15.3
+[debug] [2024-08-21T15:25:21.105Z] Platform:      darwin
+[debug] [2024-08-21T15:25:21.105Z] Node Version:  v18.5.0
+[debug] [2024-08-21T15:25:21.106Z] Time:          Wed Aug 21 2024 23:25:21 GMT+0800 (China Standard Time)
+[debug] [2024-08-21T15:25:21.106Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-21T15:25:21.111Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-21T15:25:26.159Z] Error: Timed out.
+    at Timeout._onTimeout (/Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/utils.js:268:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-21T15:38:05.010Z] ----------------------------------------------------------------------
+[debug] [2024-08-21T15:38:05.013Z] Command:       /usr/local/bin/firebase /Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase login
+[debug] [2024-08-21T15:38:05.014Z] CLI Version:   13.15.3
+[debug] [2024-08-21T15:38:05.014Z] Platform:      darwin
+[debug] [2024-08-21T15:38:05.014Z] Node Version:  v18.5.0
+[debug] [2024-08-21T15:38:05.020Z] Time:          Wed Aug 21 2024 23:38:05 GMT+0800 (China Standard Time)
+[debug] [2024-08-21T15:38:05.020Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=59054572&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-08-21T15:38:37.261Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-08-21T15:38:37.262Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-08-21T15:39:52.384Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------604439412914733189965753","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: connect ETIMEDOUT 173.194.193.84:443
+[debug] [2024-08-21T15:39:52.385Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (/Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:259:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-08-21T15:39:52.403Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2024-08-21T15:39:52.403Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"6fd0ed73-a3e2-45f7-b4e0-f72d4239d7c0"}
+[debug] [2024-08-21T15:39:52.886Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2024-08-21T15:39:52.887Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"g8tHEOKIKwGZ-J7u15RZ9YbGLlwwMouTjbFCnBbxIhg"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    6FD0E
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=nCOJ1Z2aLCAojskwpGqRnrfQrFHgyeUhGFW1Ih6Slf0&session=6fd0ed73-a3e2-45f7-b4e0-f72d4239d7c0&attest=g8tHEOKIKwGZ-J7u15RZ9YbGLlwwMouTjbFCnBbxIhg
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
+[debug] [2024-08-21T15:48:34.462Z] ----------------------------------------------------------------------
+[debug] [2024-08-21T15:48:34.465Z] Command:       /usr/local/bin/firebase /Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase logout
+[debug] [2024-08-21T15:48:34.466Z] CLI Version:   13.15.3
+[debug] [2024-08-21T15:48:34.466Z] Platform:      darwin
+[debug] [2024-08-21T15:48:34.467Z] Node Version:  v18.5.0
+[debug] [2024-08-21T15:48:34.469Z] Time:          Wed Aug 21 2024 23:48:34 GMT+0800 (China Standard Time)
+[debug] [2024-08-21T15:48:34.469Z] ----------------------------------------------------------------------
+[debug] 
+[info] No need to logout, not logged in
+[debug] [2024-08-21T15:48:44.573Z] Error: Timed out.
+    at Timeout._onTimeout (/Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/utils.js:268:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-22T01:41:35.812Z] ----------------------------------------------------------------------
+[debug] [2024-08-22T01:41:35.814Z] Command:       /usr/local/bin/firebase /Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase login
+[debug] [2024-08-22T01:41:35.814Z] CLI Version:   13.15.3
+[debug] [2024-08-22T01:41:35.814Z] Platform:      darwin
+[debug] [2024-08-22T01:41:35.815Z] Node Version:  v18.5.0
+[debug] [2024-08-22T01:41:35.821Z] Time:          Thu Aug 22 2024 09:41:35 GMT+0800 (China Standard Time)
+[debug] [2024-08-22T01:41:35.822Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=1008457020&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-08-22T01:42:05.355Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-08-22T01:42:05.356Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-08-22T02:12:57.885Z] ----------------------------------------------------------------------
+[debug] [2024-08-22T02:12:57.895Z] Command:       /usr/local/bin/firebase /Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase login
+[debug] [2024-08-22T02:12:57.896Z] CLI Version:   13.15.3
+[debug] [2024-08-22T02:12:57.897Z] Platform:      darwin
+[debug] [2024-08-22T02:12:57.897Z] Node Version:  v18.5.0
+[debug] [2024-08-22T02:12:57.917Z] Time:          Thu Aug 22 2024 10:12:57 GMT+0800 (China Standard Time)
+[debug] [2024-08-22T02:12:57.919Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=353193432&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-08-22T02:13:10.795Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-08-22T02:13:10.804Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-08-22T02:13:10.954Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","agent":{"_events":{},"_eventsCount":2,"options":{"noDelay":true,"path":null},"requests":{},"sockets":{"accounts.google.com:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"cache":{"max":20,"maxSize":0,"maxEntrySize":0,"fetchMethod":null,"keyMap":{},"keyList":["https:+http://proxy.127.0.0.1.com:80/",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"valList":[{"_events":{},"_eventsCount":2,"options":{},"requests":{},"sockets":{"accounts.google.com:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"proxy":"http://proxy.127.0.0.1.com/","proxyHeaders":{},"connectOpts":{"ALPNProtocols":["http/1.1"],"host":"proxy.127.0.0.1.com","port":80}},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"next":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"prev":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"head":0,"tail":0,"free":{"heap":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"length":0},"initialFill":1,"size":1,"disposeAfter":null,"disposed":null,"noDisposeOnSet":false,"noUpdateTTL":false,"noDeleteOnFetchRejection":false,"allowStaleOnFetchRejection":false,"allowStaleOnFetchAbort":false,"ignoreFetchAbort":false,"allowStale":false,"noDeleteOnStaleGet":false,"updateAgeOnGet":false,"updateAgeOnHas":false,"ttlResolution":1,"ttlAutopurge":false,"ttl":0},"httpAgent":{"_events":{},"_eventsCount":2,"defaultPort":80,"protocol":"http:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0},"httpsAgent":{"_events":{},"_eventsCount":2,"defaultPort":443,"protocol":"https:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}},"body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------613980979651639169897975","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: getaddrinfo ENOTFOUND proxy.127.0.0.1.com
+[debug] [2024-08-22T02:13:10.955Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (/Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:259:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-08-22T02:13:11.027Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2024-08-22T02:13:11.028Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"e05a1813-c556-4a7c-b009-d9e819fe90f0"}
+[debug] [2024-08-22T02:13:11.050Z] *** [apiv2] error from fetch(https://auth.firebase.tools/attest, {"headers":{},"method":"POST","agent":{"_events":{},"_eventsCount":2,"options":{"noDelay":true,"path":null},"requests":{},"sockets":{"auth.firebase.tools:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"cache":{"max":20,"maxSize":0,"maxEntrySize":0,"fetchMethod":null,"keyMap":{},"keyList":["https:+http://proxy.127.0.0.1.com:80/",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"valList":[{"_events":{},"_eventsCount":2,"options":{},"requests":{},"sockets":{"auth.firebase.tools:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"proxy":"http://proxy.127.0.0.1.com/","proxyHeaders":{},"connectOpts":{"ALPNProtocols":["http/1.1"],"host":"proxy.127.0.0.1.com","port":80}},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"next":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"prev":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"head":0,"tail":0,"free":{"heap":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"length":0},"initialFill":1,"size":1,"disposeAfter":null,"disposed":null,"noDisposeOnSet":false,"noUpdateTTL":false,"noDeleteOnFetchRejection":false,"allowStaleOnFetchRejection":false,"allowStaleOnFetchAbort":false,"ignoreFetchAbort":false,"allowStale":false,"noDeleteOnStaleGet":false,"updateAgeOnGet":false,"updateAgeOnHas":false,"ttlResolution":1,"ttlAutopurge":false,"ttl":0},"httpAgent":{"_events":{},"_eventsCount":2,"defaultPort":80,"protocol":"http:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0},"httpsAgent":{"_events":{},"_eventsCount":2,"defaultPort":443,"protocol":"https:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}},"body":"{\"session_id\":\"e05a1813-c556-4a7c-b009-d9e819fe90f0\"}"}): FetchError: request to https://auth.firebase.tools/attest failed, reason: getaddrinfo ENOTFOUND proxy.127.0.0.1.com
+[debug] [2024-08-22T02:13:16.309Z] Error: Timed out.
+    at Timeout._onTimeout (/Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/utils.js:268:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-22T02:14:06.500Z] ----------------------------------------------------------------------
+[debug] [2024-08-22T02:14:06.509Z] Command:       /usr/local/bin/firebase /Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase login
+[debug] [2024-08-22T02:14:06.510Z] CLI Version:   13.15.3
+[debug] [2024-08-22T02:14:06.511Z] Platform:      darwin
+[debug] [2024-08-22T02:14:06.512Z] Node Version:  v18.5.0
+[debug] [2024-08-22T02:14:06.540Z] Time:          Thu Aug 22 2024 10:14:06 GMT+0800 (China Standard Time)
+[debug] [2024-08-22T02:14:06.541Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=921132048&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-08-22T02:14:33.418Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-08-22T02:14:33.419Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-08-22T02:14:33.508Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","agent":{"_events":{},"_eventsCount":2,"options":{"noDelay":true,"path":null},"requests":{},"sockets":{"accounts.google.com:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"cache":{"max":20,"maxSize":0,"maxEntrySize":0,"fetchMethod":null,"keyMap":{},"keyList":["https:+http://proxy.127.0.0.1.com:80/",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"valList":[{"_events":{},"_eventsCount":2,"options":{},"requests":{},"sockets":{"accounts.google.com:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"proxy":"http://proxy.127.0.0.1.com/","proxyHeaders":{},"connectOpts":{"ALPNProtocols":["http/1.1"],"host":"proxy.127.0.0.1.com","port":80}},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"next":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"prev":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"head":0,"tail":0,"free":{"heap":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"length":0},"initialFill":1,"size":1,"disposeAfter":null,"disposed":null,"noDisposeOnSet":false,"noUpdateTTL":false,"noDeleteOnFetchRejection":false,"allowStaleOnFetchRejection":false,"allowStaleOnFetchAbort":false,"ignoreFetchAbort":false,"allowStale":false,"noDeleteOnStaleGet":false,"updateAgeOnGet":false,"updateAgeOnHas":false,"ttlResolution":1,"ttlAutopurge":false,"ttl":0},"httpAgent":{"_events":{},"_eventsCount":2,"defaultPort":80,"protocol":"http:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0},"httpsAgent":{"_events":{},"_eventsCount":2,"defaultPort":443,"protocol":"https:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}},"body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------895112191378137387573075","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: getaddrinfo ENOTFOUND proxy.127.0.0.1.com
+[debug] [2024-08-22T02:14:33.515Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (/Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:259:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-08-22T02:14:33.600Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2024-08-22T02:14:33.601Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"06691ab8-7bd8-49c9-b5ee-58e87e4339ea"}
+[debug] [2024-08-22T02:14:33.616Z] *** [apiv2] error from fetch(https://auth.firebase.tools/attest, {"headers":{},"method":"POST","agent":{"_events":{},"_eventsCount":2,"options":{"noDelay":true,"path":null},"requests":{},"sockets":{"auth.firebase.tools:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"cache":{"max":20,"maxSize":0,"maxEntrySize":0,"fetchMethod":null,"keyMap":{},"keyList":["https:+http://proxy.127.0.0.1.com:80/",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"valList":[{"_events":{},"_eventsCount":2,"options":{},"requests":{},"sockets":{"auth.firebase.tools:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"proxy":"http://proxy.127.0.0.1.com/","proxyHeaders":{},"connectOpts":{"ALPNProtocols":["http/1.1"],"host":"proxy.127.0.0.1.com","port":80}},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"next":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"prev":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"head":0,"tail":0,"free":{"heap":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"length":0},"initialFill":1,"size":1,"disposeAfter":null,"disposed":null,"noDisposeOnSet":false,"noUpdateTTL":false,"noDeleteOnFetchRejection":false,"allowStaleOnFetchRejection":false,"allowStaleOnFetchAbort":false,"ignoreFetchAbort":false,"allowStale":false,"noDeleteOnStaleGet":false,"updateAgeOnGet":false,"updateAgeOnHas":false,"ttlResolution":1,"ttlAutopurge":false,"ttl":0},"httpAgent":{"_events":{},"_eventsCount":2,"defaultPort":80,"protocol":"http:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0},"httpsAgent":{"_events":{},"_eventsCount":2,"defaultPort":443,"protocol":"https:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}},"body":"{\"session_id\":\"06691ab8-7bd8-49c9-b5ee-58e87e4339ea\"}"}): FetchError: request to https://auth.firebase.tools/attest failed, reason: getaddrinfo ENOTFOUND proxy.127.0.0.1.com
+[debug] [2024-08-22T02:14:38.883Z] Error: Timed out.
+    at Timeout._onTimeout (/Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/utils.js:268:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-22T13:22:41.169Z] ----------------------------------------------------------------------
+[debug] [2024-08-22T13:22:41.171Z] Command:       /usr/local/bin/firebase /Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase login:ci
+[debug] [2024-08-22T13:22:41.172Z] CLI Version:   13.15.3
+[debug] [2024-08-22T13:22:41.172Z] Platform:      darwin
+[debug] [2024-08-22T13:22:41.172Z] Node Version:  v18.5.0
+[debug] [2024-08-22T13:22:41.176Z] Time:          Thu Aug 22 2024 21:22:41 GMT+0800 (China Standard Time)
+[debug] [2024-08-22T13:22:41.177Z] ----------------------------------------------------------------------
+[debug] 
+[warn] ⚠  Authenticating with a `login:ci` token is deprecated and will be removed in a future major version of `firebase-tools`. Instead, use a service account key with `GOOGLE_APPLICATION_CREDENTIALS`: https://cloud.google.com/docs/authentication/getting-started 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=1060215171&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-08-22T13:23:03.231Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-08-22T13:23:03.231Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-08-22T13:23:03.567Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","agent":{"_events":{},"_eventsCount":2,"options":{"noDelay":true,"path":null},"requests":{},"sockets":{"accounts.google.com:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"cache":{"max":20,"maxSize":0,"maxEntrySize":0,"fetchMethod":null,"keyMap":{},"keyList":["https:+http://proxy.127.0.0.1.com:80/",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"valList":[{"_events":{},"_eventsCount":2,"options":{},"requests":{},"sockets":{"accounts.google.com:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"proxy":"http://proxy.127.0.0.1.com/","proxyHeaders":{},"connectOpts":{"ALPNProtocols":["http/1.1"],"host":"proxy.127.0.0.1.com","port":80}},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"next":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"prev":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"head":0,"tail":0,"free":{"heap":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"length":0},"initialFill":1,"size":1,"disposeAfter":null,"disposed":null,"noDisposeOnSet":false,"noUpdateTTL":false,"noDeleteOnFetchRejection":false,"allowStaleOnFetchRejection":false,"allowStaleOnFetchAbort":false,"ignoreFetchAbort":false,"allowStale":false,"noDeleteOnStaleGet":false,"updateAgeOnGet":false,"updateAgeOnHas":false,"ttlResolution":1,"ttlAutopurge":false,"ttl":0},"httpAgent":{"_events":{},"_eventsCount":2,"defaultPort":80,"protocol":"http:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0},"httpsAgent":{"_events":{},"_eventsCount":2,"defaultPort":443,"protocol":"https:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}},"body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------225421364718251772959646","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: getaddrinfo ENOTFOUND proxy.127.0.0.1.com
+[debug] [2024-08-22T13:23:03.567Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (/Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:259:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-08-22T13:23:03.576Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2024-08-22T13:23:03.577Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"a2eb242c-8487-4088-9c80-4c764f5de72e"}
+[debug] [2024-08-22T13:23:03.591Z] *** [apiv2] error from fetch(https://auth.firebase.tools/attest, {"headers":{},"method":"POST","agent":{"_events":{},"_eventsCount":2,"options":{"noDelay":true,"path":null},"requests":{},"sockets":{"auth.firebase.tools:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"cache":{"max":20,"maxSize":0,"maxEntrySize":0,"fetchMethod":null,"keyMap":{},"keyList":["https:+http://proxy.127.0.0.1.com:80/",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"valList":[{"_events":{},"_eventsCount":2,"options":{},"requests":{},"sockets":{"auth.firebase.tools:443:::::::::::::::::::::":[]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"proxy":"http://proxy.127.0.0.1.com/","proxyHeaders":{},"connectOpts":{"ALPNProtocols":["http/1.1"],"host":"proxy.127.0.0.1.com","port":80}},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"next":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"prev":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"head":0,"tail":0,"free":{"heap":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0},"length":0},"initialFill":1,"size":1,"disposeAfter":null,"disposed":null,"noDisposeOnSet":false,"noUpdateTTL":false,"noDeleteOnFetchRejection":false,"allowStaleOnFetchRejection":false,"allowStaleOnFetchAbort":false,"ignoreFetchAbort":false,"allowStale":false,"noDeleteOnStaleGet":false,"updateAgeOnGet":false,"updateAgeOnHas":false,"ttlResolution":1,"ttlAutopurge":false,"ttl":0},"httpAgent":{"_events":{},"_eventsCount":2,"defaultPort":80,"protocol":"http:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0},"httpsAgent":{"_events":{},"_eventsCount":2,"defaultPort":443,"protocol":"https:","options":{"noDelay":true,"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"scheduling":"lifo","maxTotalSockets":null,"totalSocketCount":0,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}},"body":"{\"session_id\":\"a2eb242c-8487-4088-9c80-4c764f5de72e\"}"}): FetchError: request to https://auth.firebase.tools/attest failed, reason: getaddrinfo ENOTFOUND proxy.127.0.0.1.com
+[debug] [2024-08-22T13:23:08.694Z] Error: Timed out.
+    at Timeout._onTimeout (/Users/esther/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/utils.js:268:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.

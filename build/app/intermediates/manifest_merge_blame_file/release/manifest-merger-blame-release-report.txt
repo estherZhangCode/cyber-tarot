@@ -1,0 +1,630 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.foresee.cyber_tarot"
+4    android:versionCode="10"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml
+10    <!--
+11         Required to query activities that can process text, see:
+12         https://developer.android.com/training/package-visibility and
+13         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+14
+15         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+16    -->
+17    <queries>
+17-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:42:5-47:15
+18        <intent>
+18-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:43:9-46:18
+19            <action android:name="android.intent.action.PROCESS_TEXT" />
+19-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:44:13-72
+19-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:44:21-70
+20
+21            <data android:mimeType="text/plain" />
+21-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:45:13-50
+21-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:45:19-48
+22        </intent>
+23        <!-- For browser content -->
+24        <intent>
+24-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:38:9-44:18
+25            <action android:name="android.intent.action.VIEW" />
+25-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:39:13-65
+25-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:39:21-62
+26
+27            <category android:name="android.intent.category.BROWSABLE" />
+27-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:41:13-74
+27-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:41:23-71
+28
+29            <data android:scheme="https" />
+29-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:45:13-50
+30        </intent> <!-- End of browser content -->
+31        <!-- For CustomTabsService -->
+32        <intent>
+32-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:47:9-49:18
+33            <action android:name="android.support.customtabs.action.CustomTabsService" />
+33-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:48:13-90
+33-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:48:21-87
+34        </intent>
+35    </queries>
+36
+37    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+37-->[:firebase_analytics] /Users/esther/cyber-tarot/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-79
+37-->[:firebase_analytics] /Users/esther/cyber-tarot/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-76
+38    <uses-permission android:name="android.permission.INTERNET" />
+38-->[:firebase_analytics] /Users/esther/cyber-tarot/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-67
+38-->[:firebase_analytics] /Users/esther/cyber-tarot/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-64
+39    <uses-permission android:name="android.permission.WAKE_LOCK" />
+39-->[:firebase_analytics] /Users/esther/cyber-tarot/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-68
+39-->[:firebase_analytics] /Users/esther/cyber-tarot/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-65
+40    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+40-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:25:5-79
+40-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:25:22-76
+41    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+41-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:26:5-88
+41-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:26:22-85
+42    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+42-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:27:5-82
+42-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:27:22-79
+43    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+43-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:26:5-110
+43-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:26:22-107
+44    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS" />
+44-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:29:5-83
+44-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:29:22-80
+45    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+45-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:28:5-77
+45-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:28:22-74
+46
+47    <permission
+47-->[androidx.core:core:1.13.1] /Users/esther/.gradle/caches/transforms-3/f32bf476d1d3cd6f7e92f6338e56457d/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+48        android:name="com.foresee.cyber_tarot.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.13.1] /Users/esther/.gradle/caches/transforms-3/f32bf476d1d3cd6f7e92f6338e56457d/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.13.1] /Users/esther/.gradle/caches/transforms-3/f32bf476d1d3cd6f7e92f6338e56457d/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+50
+51    <uses-permission android:name="com.foresee.cyber_tarot.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51-->[androidx.core:core:1.13.1] /Users/esther/.gradle/caches/transforms-3/f32bf476d1d3cd6f7e92f6338e56457d/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.13.1] /Users/esther/.gradle/caches/transforms-3/f32bf476d1d3cd6f7e92f6338e56457d/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+52
+53    <application
+54        android:name="android.app.Application"
+54-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:4:9-42
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.13.1] /Users/esther/.gradle/caches/transforms-3/f32bf476d1d3cd6f7e92f6338e56457d/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+56        android:icon="@mipmap/ic_launcher"
+56-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:5:9-43
+57        android:label="cyber_tarot" >
+57-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:3:9-36
+58        <activity
+58-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:6:9-27:20
+59            android:name="com.foresee.cyber_tarot.MainActivity"
+59-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:7:13-41
+60            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+60-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:12:13-163
+61            android:exported="true"
+61-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:8:13-36
+62            android:hardwareAccelerated="true"
+62-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:13:13-47
+63            android:launchMode="singleTop"
+63-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:9:13-43
+64            android:taskAffinity=""
+64-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:10:13-36
+65            android:theme="@style/LaunchTheme"
+65-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:11:13-47
+66            android:windowSoftInputMode="adjustResize" >
+66-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:14:13-55
+67
+68            <!--
+69                 Specifies an Android theme to apply to this Activity as soon as
+70                 the Android process has started. This theme is visible to the user
+71                 while the Flutter UI initializes. After that, this theme continues
+72                 to determine the Window background behind the Flutter UI.
+73            -->
+74            <meta-data
+74-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:19:13-22:17
+75                android:name="io.flutter.embedding.android.NormalTheme"
+75-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:20:15-70
+76                android:resource="@style/NormalTheme" />
+76-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:21:15-52
+77
+78            <intent-filter>
+78-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:23:13-26:29
+79                <action android:name="android.intent.action.MAIN" />
+79-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:24:17-68
+79-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:24:25-66
+80
+81                <category android:name="android.intent.category.LAUNCHER" />
+81-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:25:17-76
+81-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:25:27-74
+82            </intent-filter>
+83        </activity>
+84        <!--
+85             Don't delete the meta-data below.
+86             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+87        -->
+88        <meta-data
+88-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:30:9-32:33
+89            android:name="flutterEmbedding"
+89-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:31:13-44
+90            android:value="2" />
+90-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:32:13-30
+91        <meta-data
+91-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:33:9-35:69
+92            android:name="com.google.android.gms.ads.APPLICATION_ID"
+92-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:34:13-69
+93            android:value="ca-app-pub-2412456823303589~2989661502" />
+93-->/Users/esther/cyber-tarot/android/app/src/main/AndroidManifest.xml:35:13-67
+94
+95        <service
+95-->[:firebase_analytics] /Users/esther/cyber-tarot/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-18:19
+96            android:name="com.google.firebase.components.ComponentDiscoveryService"
+96-->[:firebase_analytics] /Users/esther/cyber-tarot/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:14:18-89
+97            android:directBootAware="true"
+97-->[com.google.firebase:firebase-common:21.0.0] /Users/esther/.gradle/caches/transforms-3/5046cf2b25e63dbd8f04040a446fee0d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+98            android:exported="false" >
+98-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:36:13-37
+99            <meta-data
+99-->[:firebase_analytics] /Users/esther/cyber-tarot/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:85
+100                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+100-->[:firebase_analytics] /Users/esther/cyber-tarot/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-128
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[:firebase_analytics] /Users/esther/cyber-tarot/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-82
+102            <meta-data
+102-->[:firebase_core] /Users/esther/cyber-tarot/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+103                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+103-->[:firebase_core] /Users/esther/cyber-tarot/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[:firebase_core] /Users/esther/cyber-tarot/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+105            <meta-data
+105-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:37:13-39:85
+106                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+106-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:38:17-139
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:39:17-82
+108            <meta-data
+108-->[com.google.firebase:firebase-installations:18.0.0] /Users/esther/.gradle/caches/transforms-3/9ee9dd9224e55e9cab4c05ae36be8209/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+109                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+109-->[com.google.firebase:firebase-installations:18.0.0] /Users/esther/.gradle/caches/transforms-3/9ee9dd9224e55e9cab4c05ae36be8209/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-installations:18.0.0] /Users/esther/.gradle/caches/transforms-3/9ee9dd9224e55e9cab4c05ae36be8209/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-installations:18.0.0] /Users/esther/.gradle/caches/transforms-3/9ee9dd9224e55e9cab4c05ae36be8209/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+112                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+112-->[com.google.firebase:firebase-installations:18.0.0] /Users/esther/.gradle/caches/transforms-3/9ee9dd9224e55e9cab4c05ae36be8209/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-installations:18.0.0] /Users/esther/.gradle/caches/transforms-3/9ee9dd9224e55e9cab4c05ae36be8209/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/esther/.gradle/caches/transforms-3/0237b02d17f069e52d0a82d617a2a656/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+115                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+115-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/esther/.gradle/caches/transforms-3/0237b02d17f069e52d0a82d617a2a656/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/esther/.gradle/caches/transforms-3/0237b02d17f069e52d0a82d617a2a656/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-common:21.0.0] /Users/esther/.gradle/caches/transforms-3/5046cf2b25e63dbd8f04040a446fee0d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+118                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+118-->[com.google.firebase:firebase-common:21.0.0] /Users/esther/.gradle/caches/transforms-3/5046cf2b25e63dbd8f04040a446fee0d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-common:21.0.0] /Users/esther/.gradle/caches/transforms-3/5046cf2b25e63dbd8f04040a446fee0d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+120        </service>
+121
+122        <meta-data
+122-->[:google_mobile_ads] /Users/esther/cyber-tarot/build/google_mobile_ads/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-14:36
+123            android:name="io.flutter.embedded_views_preview"
+123-->[:google_mobile_ads] /Users/esther/cyber-tarot/build/google_mobile_ads/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-61
+124            android:value="true" />
+124-->[:google_mobile_ads] /Users/esther/cyber-tarot/build/google_mobile_ads/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-33
+125
+126        <activity
+126-->[:url_launcher_android] /Users/esther/cyber-tarot/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+127            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+127-->[:url_launcher_android] /Users/esther/cyber-tarot/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+128            android:exported="false"
+128-->[:url_launcher_android] /Users/esther/cyber-tarot/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+129            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+129-->[:url_launcher_android] /Users/esther/cyber-tarot/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+130
+131        <property
+131-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:30:9-32:61
+132            android:name="android.adservices.AD_SERVICES_CONFIG"
+132-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:31:13-65
+133            android:resource="@xml/ga_ad_services_config" />
+133-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:32:13-58
+134
+135        <receiver
+135-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:29:9-33:20
+136            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+136-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:30:13-85
+137            android:enabled="true"
+137-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:31:13-35
+138            android:exported="false" >
+138-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:32:13-37
+139        </receiver>
+140
+141        <service
+141-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:35:9-38:40
+142            android:name="com.google.android.gms.measurement.AppMeasurementService"
+142-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:36:13-84
+143            android:enabled="true"
+143-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:37:13-35
+144            android:exported="false" />
+144-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:38:13-37
+145        <service
+145-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:39:9-43:72
+146            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+146-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:40:13-87
+147            android:enabled="true"
+147-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:41:13-35
+148            android:exported="false"
+148-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:42:13-37
+149            android:permission="android.permission.BIND_JOB_SERVICE" />
+149-->[com.google.android.gms:play-services-measurement:22.0.1] /Users/esther/.gradle/caches/transforms-3/7787340e23cd8fd1a567a1fb6f1901b8/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:43:13-69
+150
+151        <uses-library
+151-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/esther/.gradle/caches/transforms-3/52b5b5c9fbccb54fabd61b3c4c0383f9/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
+152            android:name="android.ext.adservices"
+152-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/esther/.gradle/caches/transforms-3/52b5b5c9fbccb54fabd61b3c4c0383f9/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
+153            android:required="false" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+153-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/esther/.gradle/caches/transforms-3/52b5b5c9fbccb54fabd61b3c4c0383f9/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
+154        <activity
+154-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:56:9-61:43
+155            android:name="com.google.android.gms.ads.AdActivity"
+155-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:57:13-65
+156            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+156-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:58:13-122
+157            android:exported="false"
+157-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:59:13-37
+158            android:theme="@android:style/Theme.Translucent" />
+158-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:60:13-61
+159
+160        <provider
+160-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:63:9-68:43
+161            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+161-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:64:13-76
+162            android:authorities="com.foresee.cyber_tarot.mobileadsinitprovider"
+162-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:65:13-73
+163            android:exported="false"
+163-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:66:13-37
+164            android:initOrder="100" />
+164-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:67:13-36
+165
+166        <service
+166-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:70:9-74:43
+167            android:name="com.google.android.gms.ads.AdService"
+167-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:71:13-64
+168            android:enabled="true"
+168-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:72:13-35
+169            android:exported="false" />
+169-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:73:13-37
+170
+171        <activity
+171-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:76:9-80:43
+172            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+172-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:77:13-82
+173            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+173-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:78:13-122
+174            android:exported="false" />
+174-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:79:13-37
+175        <activity
+175-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:81:9-88:43
+176            android:name="com.google.android.gms.ads.NotificationHandlerActivity"
+176-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:82:13-82
+177            android:excludeFromRecents="true"
+177-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:83:13-46
+178            android:exported="false"
+178-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:84:13-37
+179            android:launchMode="singleTask"
+179-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:85:13-44
+180            android:taskAffinity=""
+180-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:86:13-36
+181            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+181-->[com.google.android.gms:play-services-ads-lite:23.0.0] /Users/esther/.gradle/caches/transforms-3/111292861dd37783b0f5b2be2cd8366c/transformed/jetified-play-services-ads-lite-23.0.0/AndroidManifest.xml:87:13-72
+182
+183        <property
+183-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:30:9-32:61
+184            android:name="android.adservices.AD_SERVICES_CONFIG"
+184-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:31:13-65
+185            android:resource="@xml/gma_ad_services_config" />
+185-->[com.google.android.gms:play-services-measurement-api:22.0.1] /Users/esther/.gradle/caches/transforms-3/059c70773c1e2e3f46ba1409bb02a578/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:32:13-58
+186
+187        <provider
+187-->[com.google.firebase:firebase-common:21.0.0] /Users/esther/.gradle/caches/transforms-3/5046cf2b25e63dbd8f04040a446fee0d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+188            android:name="com.google.firebase.provider.FirebaseInitProvider"
+188-->[com.google.firebase:firebase-common:21.0.0] /Users/esther/.gradle/caches/transforms-3/5046cf2b25e63dbd8f04040a446fee0d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+189            android:authorities="com.foresee.cyber_tarot.firebaseinitprovider"
+189-->[com.google.firebase:firebase-common:21.0.0] /Users/esther/.gradle/caches/transforms-3/5046cf2b25e63dbd8f04040a446fee0d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+190            android:directBootAware="true"
+190-->[com.google.firebase:firebase-common:21.0.0] /Users/esther/.gradle/caches/transforms-3/5046cf2b25e63dbd8f04040a446fee0d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+191            android:exported="false"
+191-->[com.google.firebase:firebase-common:21.0.0] /Users/esther/.gradle/caches/transforms-3/5046cf2b25e63dbd8f04040a446fee0d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+192            android:initOrder="100" />
+192-->[com.google.firebase:firebase-common:21.0.0] /Users/esther/.gradle/caches/transforms-3/5046cf2b25e63dbd8f04040a446fee0d/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+193
+194        <activity
+194-->[com.google.android.gms:play-services-base:18.0.0] /Users/esther/.gradle/caches/transforms-3/823c6efc6099e92f390b23089c068a4e/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:20:9-22:45
+195            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+195-->[com.google.android.gms:play-services-base:18.0.0] /Users/esther/.gradle/caches/transforms-3/823c6efc6099e92f390b23089c068a4e/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:20:19-85
+196            android:exported="false"
+196-->[com.google.android.gms:play-services-base:18.0.0] /Users/esther/.gradle/caches/transforms-3/823c6efc6099e92f390b23089c068a4e/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:22:19-43
+197            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+197-->[com.google.android.gms:play-services-base:18.0.0] /Users/esther/.gradle/caches/transforms-3/823c6efc6099e92f390b23089c068a4e/transformed/jetified-play-services-base-18.0.0/AndroidManifest.xml:21:19-78
+198
+199        <meta-data
+199-->[com.google.android.gms:play-services-basement:18.3.0] /Users/esther/.gradle/caches/transforms-3/c738519d697b8d22527be1e515ff5b71/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+200            android:name="com.google.android.gms.version"
+200-->[com.google.android.gms:play-services-basement:18.3.0] /Users/esther/.gradle/caches/transforms-3/c738519d697b8d22527be1e515ff5b71/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+201            android:value="@integer/google_play_services_version" />
+201-->[com.google.android.gms:play-services-basement:18.3.0] /Users/esther/.gradle/caches/transforms-3/c738519d697b8d22527be1e515ff5b71/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+202
+203        <uses-library
+203-->[androidx.window:window:1.0.0-beta04] /Users/esther/.gradle/caches/transforms-3/328534138551b73ddb7d6c43314dd50e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+204            android:name="androidx.window.extensions"
+204-->[androidx.window:window:1.0.0-beta04] /Users/esther/.gradle/caches/transforms-3/328534138551b73ddb7d6c43314dd50e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+205            android:required="false" />
+205-->[androidx.window:window:1.0.0-beta04] /Users/esther/.gradle/caches/transforms-3/328534138551b73ddb7d6c43314dd50e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+206        <uses-library
+206-->[androidx.window:window:1.0.0-beta04] /Users/esther/.gradle/caches/transforms-3/328534138551b73ddb7d6c43314dd50e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+207            android:name="androidx.window.sidecar"
+207-->[androidx.window:window:1.0.0-beta04] /Users/esther/.gradle/caches/transforms-3/328534138551b73ddb7d6c43314dd50e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+208            android:required="false" />
+208-->[androidx.window:window:1.0.0-beta04] /Users/esther/.gradle/caches/transforms-3/328534138551b73ddb7d6c43314dd50e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+209
+210        <provider
+210-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:31:9-39:20
+211            android:name="androidx.startup.InitializationProvider"
+211-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:32:13-67
+212            android:authorities="com.foresee.cyber_tarot.androidx-startup"
+212-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:33:13-68
+213            android:exported="false" >
+213-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:34:13-37
+214            <meta-data
+214-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:36:13-38:52
+215                android:name="androidx.work.WorkManagerInitializer"
+215-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:37:17-68
+216                android:value="androidx.startup" />
+216-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:38:17-49
+217            <meta-data
+217-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/esther/.gradle/caches/transforms-3/39639a124d502132f1701653ee2c5b4b/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+218                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+218-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/esther/.gradle/caches/transforms-3/39639a124d502132f1701653ee2c5b4b/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+219                android:value="androidx.startup" />
+219-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/esther/.gradle/caches/transforms-3/39639a124d502132f1701653ee2c5b4b/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+220            <meta-data
+220-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+221                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+221-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+222                android:value="androidx.startup" />
+222-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+223        </provider>
+224
+225        <service
+225-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:41:9-46:35
+226            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+226-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:42:13-88
+227            android:directBootAware="false"
+227-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:43:13-44
+228            android:enabled="@bool/enable_system_alarm_service_default"
+228-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:44:13-72
+229            android:exported="false" />
+229-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:45:13-37
+230        <service
+230-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:47:9-53:35
+231            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+231-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:48:13-84
+232            android:directBootAware="false"
+232-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:49:13-44
+233            android:enabled="@bool/enable_system_job_service_default"
+233-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:50:13-70
+234            android:exported="true"
+234-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:51:13-36
+235            android:permission="android.permission.BIND_JOB_SERVICE" />
+235-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:52:13-69
+236        <service
+236-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:54:9-59:35
+237            android:name="androidx.work.impl.foreground.SystemForegroundService"
+237-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:55:13-81
+238            android:directBootAware="false"
+238-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:56:13-44
+239            android:enabled="@bool/enable_system_foreground_service_default"
+239-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:57:13-77
+240            android:exported="false" />
+240-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:58:13-37
+241
+242        <receiver
+242-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:61:9-66:35
+243            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+243-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:62:13-88
+244            android:directBootAware="false"
+244-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:63:13-44
+245            android:enabled="true"
+245-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:64:13-35
+246            android:exported="false" />
+246-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:65:13-37
+247        <receiver
+247-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:67:9-77:20
+248            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+248-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:68:13-106
+249            android:directBootAware="false"
+249-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:69:13-44
+250            android:enabled="false"
+250-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:70:13-36
+251            android:exported="false" >
+251-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:71:13-37
+252            <intent-filter>
+252-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:73:13-76:29
+253                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+253-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:17-87
+253-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:25-84
+254                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+254-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:17-90
+254-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:25-87
+255            </intent-filter>
+256        </receiver>
+257        <receiver
+257-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:78:9-88:20
+258            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+258-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:79:13-104
+259            android:directBootAware="false"
+259-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:80:13-44
+260            android:enabled="false"
+260-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:81:13-36
+261            android:exported="false" >
+261-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:82:13-37
+262            <intent-filter>
+262-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:84:13-87:29
+263                <action android:name="android.intent.action.BATTERY_OKAY" />
+263-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:17-77
+263-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:25-74
+264                <action android:name="android.intent.action.BATTERY_LOW" />
+264-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:17-76
+264-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:25-73
+265            </intent-filter>
+266        </receiver>
+267        <receiver
+267-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:89:9-99:20
+268            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+268-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:90:13-104
+269            android:directBootAware="false"
+269-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:91:13-44
+270            android:enabled="false"
+270-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:92:13-36
+271            android:exported="false" >
+271-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:93:13-37
+272            <intent-filter>
+272-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:95:13-98:29
+273                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+273-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:17-83
+273-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:25-80
+274                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+274-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:17-82
+274-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:25-79
+275            </intent-filter>
+276        </receiver>
+277        <receiver
+277-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:100:9-109:20
+278            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+278-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:101:13-103
+279            android:directBootAware="false"
+279-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:102:13-44
+280            android:enabled="false"
+280-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:103:13-36
+281            android:exported="false" >
+281-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:104:13-37
+282            <intent-filter>
+282-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:106:13-108:29
+283                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+283-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:17-79
+283-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:25-76
+284            </intent-filter>
+285        </receiver>
+286        <receiver
+286-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:110:9-121:20
+287            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+287-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:111:13-88
+288            android:directBootAware="false"
+288-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:112:13-44
+289            android:enabled="false"
+289-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:113:13-36
+290            android:exported="false" >
+290-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:114:13-37
+291            <intent-filter>
+291-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:116:13-120:29
+292                <action android:name="android.intent.action.BOOT_COMPLETED" />
+292-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:117:17-79
+292-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:117:25-76
+293                <action android:name="android.intent.action.TIME_SET" />
+293-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:17-73
+293-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:25-70
+294                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+294-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:17-81
+294-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:25-78
+295            </intent-filter>
+296        </receiver>
+297        <receiver
+297-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:122:9-131:20
+298            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+298-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:123:13-99
+299            android:directBootAware="false"
+299-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:124:13-44
+300            android:enabled="@bool/enable_system_alarm_service_default"
+300-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:125:13-72
+301            android:exported="false" >
+301-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:126:13-37
+302            <intent-filter>
+302-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:128:13-130:29
+303                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+303-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:17-98
+303-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:25-95
+304            </intent-filter>
+305        </receiver>
+306        <receiver
+306-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:132:9-142:20
+307            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+307-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:133:13-78
+308            android:directBootAware="false"
+308-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:134:13-44
+309            android:enabled="true"
+309-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:135:13-35
+310            android:exported="true"
+310-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:136:13-36
+311            android:permission="android.permission.DUMP" >
+311-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:137:13-57
+312            <intent-filter>
+312-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:139:13-141:29
+313                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+313-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:17-88
+313-->[androidx.work:work-runtime:2.7.0] /Users/esther/.gradle/caches/transforms-3/058146f1c16bd059944482c1a70a6c90/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:25-85
+314            </intent-filter>
+315        </receiver>
+316        <receiver
+316-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+317            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+317-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+318            android:directBootAware="false"
+318-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+319            android:enabled="true"
+319-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+320            android:exported="true"
+320-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+321            android:permission="android.permission.DUMP" >
+321-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+322            <intent-filter>
+322-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+323                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+323-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+323-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+324            </intent-filter>
+325            <intent-filter>
+325-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+326                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+326-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+326-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+327            </intent-filter>
+328            <intent-filter>
+328-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+329                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+329-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+329-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+330            </intent-filter>
+331            <intent-filter>
+331-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+332                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+332-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+332-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/esther/.gradle/caches/transforms-3/c98f83193b76f3085a175c8dca151ca5/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+333            </intent-filter>
+334        </receiver>
+335
+336        <service
+336-->[androidx.room:room-runtime:2.2.5] /Users/esther/.gradle/caches/transforms-3/84ac10ff21edb43a798828186c63f3d1/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+337            android:name="androidx.room.MultiInstanceInvalidationService"
+337-->[androidx.room:room-runtime:2.2.5] /Users/esther/.gradle/caches/transforms-3/84ac10ff21edb43a798828186c63f3d1/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+338            android:directBootAware="true"
+338-->[androidx.room:room-runtime:2.2.5] /Users/esther/.gradle/caches/transforms-3/84ac10ff21edb43a798828186c63f3d1/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+339            android:exported="false" />
+339-->[androidx.room:room-runtime:2.2.5] /Users/esther/.gradle/caches/transforms-3/84ac10ff21edb43a798828186c63f3d1/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+340    </application>
+341
+342</manifest>

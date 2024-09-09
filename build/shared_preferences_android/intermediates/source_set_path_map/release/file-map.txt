@@ -1,0 +1,14 @@
+io.flutter.plugins.sharedpreferences.shared_preferences_android-jetified-datastore-1.0.0-0 /Users/esther/.gradle/caches/transforms-3/3211fe780e65d87508b8737abe8f8838/transformed/jetified-datastore-1.0.0/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-jetified-window-1.0.0-beta04-1 /Users/esther/.gradle/caches/transforms-3/328534138551b73ddb7d6c43314dd50e/transformed/jetified-window-1.0.0-beta04/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-core-1.6.0-2 /Users/esther/.gradle/caches/transforms-3/361f88f5d820b22706ca97b23e1b7e61/transformed/core-1.6.0/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-jetified-datastore-preferences-1.0.0-3 /Users/esther/.gradle/caches/transforms-3/661a4140c25f17724e2449cd87c0dc03/transformed/jetified-datastore-preferences-1.0.0/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-jetified-annotation-experimental-1.1.0-4 /Users/esther/.gradle/caches/transforms-3/bdccc09d9987cdbfc3ed2ddea9bf3d94/transformed/jetified-annotation-experimental-1.1.0/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-jetified-window-java-1.0.0-beta04-5 /Users/esther/.gradle/caches/transforms-3/ec3739461dba4a6cfc1504b8fe418bb0/transformed/jetified-window-java-1.0.0-beta04/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-main-6 /Users/esther/.pub-cache/hosted/pub.dev/shared_preferences_android-2.3.1/android/src/main/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-release-7 /Users/esther/.pub-cache/hosted/pub.dev/shared_preferences_android-2.3.1/android/src/release/res
+io.flutter.plugins.sharedpreferences.shared_preferences_android-pngs-8 /Users/esther/cyber-tarot/build/shared_preferences_android/generated/res/pngs/release
+io.flutter.plugins.sharedpreferences.shared_preferences_android-resValues-9 /Users/esther/cyber-tarot/build/shared_preferences_android/generated/res/resValues/release
+io.flutter.plugins.sharedpreferences.shared_preferences_android-rs-10 /Users/esther/cyber-tarot/build/shared_preferences_android/generated/res/rs/release
+io.flutter.plugins.sharedpreferences.shared_preferences_android-mergeReleaseResources-11 /Users/esther/cyber-tarot/build/shared_preferences_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.sharedpreferences.shared_preferences_android-mergeReleaseResources-12 /Users/esther/cyber-tarot/build/shared_preferences_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.sharedpreferences.shared_preferences_android-merged_res-13 /Users/esther/cyber-tarot/build/shared_preferences_android/intermediates/merged_res/release

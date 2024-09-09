@@ -1,0 +1,12 @@
+com.kpaxian.feature_guider-jetified-window-1.0.0-beta04-0 /Users/esther/.gradle/caches/transforms-3/328534138551b73ddb7d6c43314dd50e/transformed/jetified-window-1.0.0-beta04/res
+com.kpaxian.feature_guider-core-1.6.0-1 /Users/esther/.gradle/caches/transforms-3/361f88f5d820b22706ca97b23e1b7e61/transformed/core-1.6.0/res
+com.kpaxian.feature_guider-jetified-annotation-experimental-1.1.0-2 /Users/esther/.gradle/caches/transforms-3/bdccc09d9987cdbfc3ed2ddea9bf3d94/transformed/jetified-annotation-experimental-1.1.0/res
+com.kpaxian.feature_guider-jetified-window-java-1.0.0-beta04-3 /Users/esther/.gradle/caches/transforms-3/ec3739461dba4a6cfc1504b8fe418bb0/transformed/jetified-window-java-1.0.0-beta04/res
+com.kpaxian.feature_guider-main-4 /Users/esther/.pub-cache/hosted/pub.dev/feature_guider-0.0.4/android/src/main/res
+com.kpaxian.feature_guider-release-5 /Users/esther/.pub-cache/hosted/pub.dev/feature_guider-0.0.4/android/src/release/res
+com.kpaxian.feature_guider-pngs-6 /Users/esther/cyber-tarot/build/feature_guider/generated/res/pngs/release
+com.kpaxian.feature_guider-resValues-7 /Users/esther/cyber-tarot/build/feature_guider/generated/res/resValues/release
+com.kpaxian.feature_guider-rs-8 /Users/esther/cyber-tarot/build/feature_guider/generated/res/rs/release
+com.kpaxian.feature_guider-mergeReleaseResources-9 /Users/esther/cyber-tarot/build/feature_guider/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.kpaxian.feature_guider-mergeReleaseResources-10 /Users/esther/cyber-tarot/build/feature_guider/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.kpaxian.feature_guider-merged_res-11 /Users/esther/cyber-tarot/build/feature_guider/intermediates/merged_res/release

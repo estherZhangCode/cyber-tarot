@@ -1,0 +1,24 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/esther/cyber-tarot/build/ios/Release-iphoneos/feature_guider/feature_guider.framework/feature_guider'
+relocations:
+  - { offsetInCU: 0x34, offset: 0x57C4A, size: 0x8, addend: 0x0, symName: _feature_guiderVersionString, symObjAddr: 0x0, symBinAddr: 0x5890, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x57C7F, size: 0x8, addend: 0x0, symName: _feature_guiderVersionNumber, symObjAddr: 0x30, symBinAddr: 0x58C0, symSize: 0x0 }
+  - { offsetInCU: 0x27, offset: 0x57CBC, size: 0x8, addend: 0x0, symName: '_$s14feature_guider19FeatureGuiderPluginC8register4withySo07FlutterE9Registrar_p_tFZ', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xDC }
+  - { offsetInCU: 0xD4, offset: 0x57D69, size: 0x8, addend: 0x0, symName: '_$s14feature_guider19FeatureGuiderPluginC8register4withySo07FlutterE9Registrar_p_tFZTo', symObjAddr: 0x11C, symBinAddr: 0x411C, symSize: 0xF0 }
+  - { offsetInCU: 0x19B, offset: 0x57E30, size: 0x8, addend: 0x0, symName: '_$s14feature_guider19FeatureGuiderPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctFTo', symObjAddr: 0x460, symBinAddr: 0x4460, symSize: 0x78 }
+  - { offsetInCU: 0x1E3, offset: 0x57E78, size: 0x8, addend: 0x0, symName: '_$s14feature_guider19FeatureGuiderPluginCACycfcTo', symObjAddr: 0x508, symBinAddr: 0x4508, symSize: 0x3C }
+  - { offsetInCU: 0x234, offset: 0x57EC9, size: 0x8, addend: 0x0, symName: '_$s14feature_guider19FeatureGuiderPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF015$syXlSgIeyBy_ypM7Iegn_TRyXlSgIeyBy_Tf1ncn_nTf4ndg_n', symObjAddr: 0x574, symBinAddr: 0x4574, symSize: 0x2EC }
+  - { offsetInCU: 0x2AB, offset: 0x57F40, size: 0x8, addend: 0x0, symName: '_$s14feature_guider19FeatureGuiderPluginCMa', symObjAddr: 0xFC, symBinAddr: 0x40FC, symSize: 0x20 }
+  - { offsetInCU: 0x2E4, offset: 0x57F79, size: 0x8, addend: 0x0, symName: '_$sSo8NSObjectCMa', symObjAddr: 0x3A4, symBinAddr: 0x43A4, symSize: 0x3C }
+  - { offsetInCU: 0x2F8, offset: 0x57F8D, size: 0x8, addend: 0x0, symName: '_$sypSgWOh', symObjAddr: 0x3E0, symBinAddr: 0x43E0, symSize: 0x40 }
+  - { offsetInCU: 0x30C, offset: 0x57FA1, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x420, symBinAddr: 0x4420, symSize: 0x40 }
+  - { offsetInCU: 0x32B, offset: 0x57FC0, size: 0x8, addend: 0x0, symName: '_$sypSgWOc', symObjAddr: 0x860, symBinAddr: 0x4860, symSize: 0x48 }
+  - { offsetInCU: 0x33F, offset: 0x57FD4, size: 0x8, addend: 0x0, symName: ___swift_project_boxed_opaque_existential_0, symObjAddr: 0x8A8, symBinAddr: 0x48A8, symSize: 0x24 }
+  - { offsetInCU: 0x353, offset: 0x57FE8, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_0, symObjAddr: 0x8CC, symBinAddr: 0x48CC, symSize: 0x20 }
+  - { offsetInCU: 0x4D4, offset: 0x58169, size: 0x8, addend: 0x0, symName: '_$s14feature_guider19FeatureGuiderPluginC8register4withySo07FlutterE9Registrar_p_tFZ', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xDC }
+  - { offsetInCU: 0x556, offset: 0x581EB, size: 0x8, addend: 0x0, symName: '_$s14feature_guider19FeatureGuiderPluginCACycfC', symObjAddr: 0xDC, symBinAddr: 0x40DC, symSize: 0x20 }
+  - { offsetInCU: 0x591, offset: 0x58226, size: 0x8, addend: 0x0, symName: '_$s14feature_guider19FeatureGuiderPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF', symObjAddr: 0x20C, symBinAddr: 0x420C, symSize: 0x198 }
+  - { offsetInCU: 0x5F9, offset: 0x5828E, size: 0x8, addend: 0x0, symName: '_$s14feature_guider19FeatureGuiderPluginCACycfc', symObjAddr: 0x4D8, symBinAddr: 0x44D8, symSize: 0x30 }
+  - { offsetInCU: 0x62A, offset: 0x582BF, size: 0x8, addend: 0x0, symName: '_$s14feature_guider19FeatureGuiderPluginCfD', symObjAddr: 0x544, symBinAddr: 0x4544, symSize: 0x30 }
+...

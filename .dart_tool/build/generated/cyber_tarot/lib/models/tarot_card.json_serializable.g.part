@@ -1,0 +1,43 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+TarotCard _$TarotCardFromJson(Map<String, dynamic> json) => TarotCard(
+      json['id'] as String,
+      json['name_cn'] as String,
+      json['name_en'] as String,
+      TarotMeanings.fromJson(json['meaning'] as Map<String, dynamic>),
+      json['pic'] as String,
+    );
+
+Map<String, dynamic> _$TarotCardToJson(TarotCard instance) => <String, dynamic>{
+      'id': instance.id,
+      'name_cn': instance.nameCn,
+      'name_en': instance.nameEn,
+      'meaning': instance.meaning,
+      'pic': instance.pic,
+    };
+
+TarotMeanings _$TarotMeaningsFromJson(Map<String, dynamic> json) =>
+    TarotMeanings(
+      json['up'] as String,
+      json['down'] as String,
+      json['love_up'] as String,
+      json['love_down'] as String,
+      json['career_up'] as String,
+      json['career_down'] as String,
+      json['fortune_up'] as String,
+      json['fortune_down'] as String,
+    );
+
+Map<String, dynamic> _$TarotMeaningsToJson(TarotMeanings instance) =>
+    <String, dynamic>{
+      'up': instance.up,
+      'down': instance.down,
+      'love_up': instance.loveUp,
+      'love_down': instance.loveDown,
+      'career_up': instance.careerUp,
+      'career_down': instance.careerDown,
+      'fortune_up': instance.fortuneUp,
+      'fortune_down': instance.fortuneDown,
+    };
