@@ -1,0 +1,57 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.svn/
+
+# Dart/Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Android related
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.*
+**/android/.idea
+**/android/.idea/workspace.xml
+**/android/.idea/libraries
+**/android/.idea/modules.xml
+**/android/.idea/navEditor.xml
+**/android/.idea/caches
+**/android/.idea/codeStyles
+
+# iOS related
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/.idea/
+**/ios/**/.symlinks/
+**/ios/**/Pods/
+**/ios/**/.generated/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# VSCode
+.vscode/
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# macOS
+*.DS_Store
+
+# Temp files
+tmp/
